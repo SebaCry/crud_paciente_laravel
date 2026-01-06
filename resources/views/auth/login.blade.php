@@ -56,14 +56,6 @@
                         </button>
                     </div>
                 </form>
-
-                <div class="mt-3 text-center text-muted">
-                    <small>
-                        <i class="fas fa-info-circle"></i>
-                        Credenciales de prueba: <br>
-                        Documento: <strong>1234567890</strong> | Contraseña: <strong>1234567890</strong>
-                    </small>
-                </div>
             </div>
         </div>
     </div>

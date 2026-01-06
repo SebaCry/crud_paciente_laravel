@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Genero extends Model
 {
-    protected $table = 'genero';
+    protected $table = 'genero'; // Cabe aclarar que se hacen las tablas con el nombre que se dio en los requerimientos de la prueba
 
     protected $fillable = [
         'nombre',

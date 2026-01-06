@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Paciente extends Model
 {
-    protected $table = 'paciente';
+    protected $table = 'paciente'; // Cabe aclarar que se hacen las tablas con el nombre que se dio en los requerimientos de la prueba
 
     protected $fillable = [
         'tipo_documento_id',
@@ -20,6 +20,8 @@ class Paciente extends Model
         'municipio_id',
         'foto',
     ];
+
+    // Las relaciones de la base de datos referentes a esta tabla Pacientes
 
     public function tipoDocumento()
     {

@@ -14,6 +14,6 @@ Route::post('/login', [AuthController::class, 'login'])->name('login.post');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::middleware('auth')->group(function () {
-    Route::resource('pacientes', PacienteController::class);
-    Route::get('/municipios/{departamento}', [PacienteController::class]);
+    Route::resource('pacientes', PacienteController::class); // El resource define todos los endpoints para el CRUD automaticamente
+    Route::get('/municipios/{departamento}', [PacienteController::class, 'getMunicipios'])->name('municipios.get');
 });
